@@ -1,0 +1,36 @@
+.emote {
+  height: 82px;
+  width: 26%;
+  display: inline-block;
+  position: relative;
+  padding: 0.4em 0.2em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 6px;
+
+  .smallest-emotes & {
+    width: 12%;
+    height: 38px;
+  }
+
+  .smaller-emotes & {
+    width: 16%;
+    height: 51px;
+  }
+
+  .small-emotes & {
+    width: 21%;
+  }
+
+  .single-emotes & {
+    height: 166px;
+    width: 100%;
+  }
+
+  img {
+    height: 1em;
+    display: inline-block;
+    opacity: 0;
+  }
+}

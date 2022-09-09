@@ -1,0 +1,35 @@
+.notification-header {
+    right: 52px;
+    bottom: 10px;
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    color: white !important;
+}
+
+.message-counter {
+    margin-right: 8px;
+}
+
+.message {
+    display: inline-block !important;
+    width: 352px;
+    margin-left: 20px;
+    margin-top: 4px;
+    padding-right: 35px;
+    border-radius: 6px;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600 !important;
+    line-height: 32px !important;
+    word-wrap: break-word;
+}
+
+.message-decoration {
+    right: 15px;
+    bottom: 14%;
+    z-index: 999;
+    position: absolute;
+}

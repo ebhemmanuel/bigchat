@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900);
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #424242;
+  color: black;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.colon {
+  display: none;
+}
+
+.badge {
+  top: -0.1em;
+  height: 1em;
+  display: none;
+  position: relative;
+  margin-right: 0.2em;
+  vertical-align: middle;
+}
+
+#log {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: max-content;
+  padding: 0 30px 40px;
+}
+#log > div.deleted {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=base.css.map */

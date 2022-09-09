@@ -1,0 +1,91 @@
+{
+    "customField1": {
+        "label": "Color Picker Example",
+        "type": "colorpicker",
+        "value": "#000EF0"
+    },
+    "customField2": {
+        "label": "Slider Example",
+        "type": "slider",
+        "name": "",
+        "value": "3",
+        "max": 200,
+        "min": 100,
+        "steps": 4
+    },
+    "customField3": {
+        "label": "Textfield Example",
+        "type": "textfield",
+        "value": "Hi There"
+    },
+    "customField4": {
+        "label": "Font Picker Example",
+        "type": "fontpicker",
+        "value": "Open Sans"
+    },
+    "customField5": {
+        "label": "Dropdown Example",
+        "type": "dropdown",
+        "options": {
+            "optionA": "Option A",
+            "optionB": "Option B",
+            "optionC": "Option C"
+        },
+        "value": "optionB"
+    },
+    "customField6": {
+        "label": "Image Input Example",
+        "type": "image-input",
+        "value": null
+    },
+    "customField7": {
+        "label": "Sound Input Example",
+        "type": "sound-input",
+        "value": null
+    },
+    "messageWidth": {
+        "label": "Message Width",
+        "type": "slider",
+        "name": "messageWidth",
+        "value": 352,
+        "max": 400,
+        "min": 100,
+        "steps": 4
+    },
+    "nameFontSize": {
+        "label": "Name Font Size",
+        "type": "slider",
+        "name": "nameFontSize",
+        "value": 24,
+        "max": 36,
+        "min": 12,
+        "steps": 4
+    },
+    "messageFontSize": {
+        "label": "Message Font Size",
+        "type": "slider",
+        "name": "messageFontSize",
+        "value": 20,
+        "max": 36,
+        "min": 12,
+        "steps": 4
+    },
+    "bg-chat-message": {
+        "label": "Set background color for chat bubble",
+        "type": "colorpicker",
+        "name": "bgChatMessage",
+        "value": "transparent"
+    },
+    "color-chat-message": {
+        "label": "Set color for chat bubble text",
+        "type": "colorpicker",
+        "name": "colorChatMessage",
+        "value": "#000000"
+    },
+    "color-chat-border-top": {
+        "label": "Set color for chat border-top",
+        "type": "colorpicker",
+        "name": "colorBorderChat",
+        "value": "#FFFFFF"
+    }
+}

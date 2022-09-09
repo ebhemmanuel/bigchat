@@ -1,0 +1,31 @@
+<!-- item will be appened to this layout -->
+<div id="log" class="sl__chat__layout">
+    <div class="notification-header"><span class="message-counter"></span><span class="message-header"></span></div>
+</div>
+<!-- chat item -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/template" id="chatlist_item">
+    <!-- Fade in notification-header bottom to top, blink in line center to edge growth, then message-wrapper grows vertically, fade in message content -->
+    <div class="message-wrapper">
+        <div class="profile-pulse"></div>
+        <div class="profile-picture" style="background:{color};">
+            <img class="custom-image" src="">
+            <div class="top-part"></div>
+            <div class="bottom-part"></div>
+        </div>
+        <div class="message-container">
+            <div class="message-data" data-from="{from}" data-id="{messageId}">
+                <span class="meta">
+                    <span class="badges"></span>
+                    <span class="name" style="color: {color}">{from}</span>
+                </span>
+                <span class="message">
+                    {message}
+                </span>
+            </div>
+            <img class="message-decoration" src="">
+        </div>
+        <div class="notification-pulse marked-message"></div>
+    </div>
+</script>
