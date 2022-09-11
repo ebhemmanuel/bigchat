@@ -156,8 +156,12 @@ body {
   border: solid 5px #bf11ff !important;
   background: black;
 }
+.divine .custom-image {
+  top: -16px;
+  left: -12px;
+}
 .divine + .message-container {
-  border: solid 5px #bf11ff;
+  border: solid 5px #bf11ff !important;
   background: transparent;
   background-size: cover;
   background-position: top;
@@ -171,6 +175,22 @@ body {
 }
 .divine + .message-container .message {
   color: white;
+}
+
+.angel {
+  background: transparent !important;
+}
+.angel + .message-container {
+  border: solid 5px #ff9fd4 !important;
+}
+.angel + .message-container:after {
+  border-right-color: #ff9fd4 !important;
+}
+.angel + .message-container .name {
+  color: white !important;
+}
+.angel + .message-container .message {
+  color: white !important;
 }
 
 .palico {

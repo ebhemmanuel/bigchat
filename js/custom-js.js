@@ -73,6 +73,7 @@ document.addEventListener('onEventReceived', function () {
         var arcPfp      = 'https://cdn.discordapp.com/attachments/889602912966311946/1016758803804463224/arc-profile-custome.png';
         var amiiPfp     = 'https://cdn.discordapp.com/attachments/883271091278209054/1016797834877608047/ammi-dark-profile-custome.png';
         var raavaPfp    = 'https://cdn.discordapp.com/attachments/887882226308640838/1016826134941401198/raava-profile-custome.png';
+        var angelPfp    = 'https://cdn.discordapp.com/attachments/876887295427477564/1018337386096230561/angel-profile-custome.png';
         // Vis Profile
         var visPfp      = 'https://cdn.discordapp.com/attachments/887882226308640838/1017538344416182302/vis-profile-custome.png';
         var visDeco     = 'https://cdn.discordapp.com/attachments/837650561960247316/1017584775021731840/fishead.png';
@@ -129,6 +130,10 @@ document.addEventListener('onEventReceived', function () {
         // Raava 
         if ($(this).find('.message-data').attr('data-from') == 'R4AVA') {
             profilePrototype('Raava', 'raava', true, raavaPfp, null);
+        }
+        // Raava 
+        if ($(this).find('.message-data').attr('data-from') == 'flowerofjoy') {
+            profilePrototype('Angel', 'angel', tnull, angelPfp, null);
         }
     });
 });

@@ -131,9 +131,13 @@
 .divine {
     border: solid 5px #bf11ff !important;
     background: black;
+    .custom-image {
+        top: -16px;
+        left: -12px;
+    }
 
     +.message-container {
-        border: solid 5px #bf11ff;
+        border: solid 5px #bf11ff !important;
         background: transparent;
         background-size: cover;
         background-position: top;
@@ -149,6 +153,26 @@
 
         .message {
             color: white;
+        }
+    }
+}
+
+.angel {
+    background: transparent !important;
+
+    +.message-container {
+        border: solid 5px #ff9fd4  !important;
+
+        &:after {
+            border-right-color: #ff9fd4  !important;
+        }
+
+        .name {
+            color: white !important;
+        }
+
+        .message {
+            color: white !important;
         }
     }
 }
