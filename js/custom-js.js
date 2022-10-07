@@ -95,6 +95,8 @@ document.addEventListener('onEventReceived', function () {
             $('.message-wrapper').eq(e).find('.profile-picture').addClass('show');
         };
 
+        // Custom Profiles - Add profiles below
+
         // Vis
         if ($(this).find('.message-data').attr('data-from') == 'Vistronn') {
             profilePrototype('Vistron', 'vistron', null, visPfp, visDeco);
