@@ -65,19 +65,6 @@ document.addEventListener('onEventReceived', function () {
         }
         
         // Check for user - custom profiles
-        var deltaPfp    = 'https://cdn.discordapp.com/attachments/836046912795705364/1016833145489862737/custom-profile-delta.png';
-        var eluciaPfp   = 'https://cdn.discordapp.com/attachments/955963700643266581/1016864787071766588/elucia-profile-custome.png';
-        var zionPfp     = 'https://cdn.discordapp.com/attachments/646697203850543144/1017128291439755264/zion-clean-anim-profile-custome.gif';
-        var divinePfp   = 'https://cdn.discordapp.com/attachments/646697203850543144/1017111783632281620/divine-profile-custome.png';
-        var palicoPfp   = 'https://cdn.discordapp.com/attachments/894202372585299978/1016752623585595532/custom-profile.png';
-        var arcPfp      = 'https://cdn.discordapp.com/attachments/889602912966311946/1016758803804463224/arc-profile-custome.png';
-        var amiiPfp     = 'https://cdn.discordapp.com/attachments/883271091278209054/1016797834877608047/ammi-dark-profile-custome.png';
-        var raavaPfp    = 'https://cdn.discordapp.com/attachments/887882226308640838/1016826134941401198/raava-profile-custome.png';
-        var angelPfp    = 'https://cdn.discordapp.com/attachments/876887295427477564/1018337386096230561/angel-profile-custome.png';
-        // Vis Profile
-        var visPfp      = 'https://cdn.discordapp.com/attachments/887882226308640838/1017538344416182302/vis-profile-custome.png';
-        var visDeco     = 'https://cdn.discordapp.com/attachments/837650561960247316/1017584775021731840/fishead.png';
-
         function profilePrototype(replaceName, className, darkTheme, profileUrl, decoUrl) {
             if (replaceName != null) {
                 $('.message-wrapper').eq(e).find('.name').text(replaceName);
@@ -96,46 +83,81 @@ document.addEventListener('onEventReceived', function () {
         };
 
         // Custom Profiles - Add profiles below
+        var deltaPfp    = 'https://cdn.discordapp.com/attachments/836046912795705364/1016833145489862737/custom-profile-delta.png';
+        var eluciaPfp   = 'https://cdn.discordapp.com/attachments/955963700643266581/1016864787071766588/elucia-profile-custome.png';
+        var zionPfp     = 'https://cdn.discordapp.com/attachments/646697203850543144/1017128291439755264/zion-clean-anim-profile-custome.gif';
+        var divinePfp   = 'https://cdn.discordapp.com/attachments/646697203850543144/1017111783632281620/divine-profile-custome.png';
+        var palicoPfp   = 'https://cdn.discordapp.com/attachments/894202372585299978/1016752623585595532/custom-profile.png';
+        var arcPfp      = 'https://cdn.discordapp.com/attachments/889602912966311946/1016758803804463224/arc-profile-custome.png';
+        var amiiPfp     = 'https://cdn.discordapp.com/attachments/883271091278209054/1016797834877608047/ammi-dark-profile-custome.png';
+        var raavaPfp    = 'https://cdn.discordapp.com/attachments/887882226308640838/1016826134941401198/raava-profile-custome.png';
+        var moogiPfp    = 'https://cdn.discordapp.com/attachments/887882226308640838/1017421934180450365/bmoogi.png';
+        var timbooPfp    = 'https://cdn.discordapp.com/attachments/955204936805802064/1027504822481592392/timboopfp.png';
+        var OhSoLonelyPfp    = 'https://cdn.discordapp.com/attachments/933833824058638418/1017433531720421396/ohsolonely.png';
+        var StreamElementsPfp    = 'https://cdn.discordapp.com/attachments/887882226308640838/1017450924979015721/streamelements_1.png';
+        var visPfp    = 'https://cdn.discordapp.com/attachments/887882226308640838/1017538344416182302/vis-profile-custome.png';
+        var shredPfp    = 'https://cdn.discordapp.com/attachments/955204936805802064/1027533590793302016/shredpfp.png';
+        var smashPfp    = 'https://cdn.discordapp.com/attachments/945742950212710470/1027567942763823225/smashpfp.png';
 
-        // Vis
-        if ($(this).find('.message-data').attr('data-from') == 'Vistronn') {
-            profilePrototype('Vistron', 'vistron', null, visPfp, visDeco);
-        }
         // Delta
         if ($(this).find('.message-data').attr('data-from') == 'Delta013') {
-            profilePrototype(null, 'delta', null, deltaPfp, null);
+            profilePrototype(null, 'delta', null, deltaPfp);
         }
         // Elucia
         if ($(this).find('.message-data').attr('data-from') == 'eluciasw') {
-            profilePrototype('Elucia', 'elucia', null, eluciaPfp, null);
+            profilePrototype('Elucia', 'elucia', null, eluciaPfp);
+          }
+        // Vis
+        if ($(this).find('.message-data').attr('data-from') == 'vistronn') {
+            profilePrototype('Vis', 'vis', null, visPfp);
+        }
+        // Moogins
+        if ($(this).find('.message-data').attr('data-from') == 'moogimoogins') {
+            profilePrototype('Moogi', 'moogi', null, moogiPfp);
+          }
+        // Smash
+        if ($(this).find('.message-data').attr('data-from') == 'dragonsmashy') {
+            profilePrototype('Smash', 'smash', null, smashPfp);
+           }
+        // Shred
+        if ($(this).find('.message-data').attr('data-from') == 'xxshredxx') {
+            profilePrototype('Shred', 'shred', null, shredPfp);
+         }
+        // Oh So Lonely
+        if ($(this).find('.message-data').attr('data-from') == 'oh_so_lonely') {
+            profilePrototype(null, null, null, OhSoLonelyPfp);
+         }
+        // Stream Elements
+        if ($(this).find('.message-data').attr('data-from') == 'streamelements') {
+            profilePrototype(null, null, null, StreamElementsPfp);
+        }
+        // Timboo
+        if ($(this).find('.message-data').attr('data-from') == 'timb0o_') {
+            profilePrototype('Shyboo', 'shyboo', null, timbooPfp);
         }
         // Zion
         if ($(this).find('.message-data').attr('data-from') == 'ZionCross') {
-            profilePrototype(null, null, true, zionPfp, null);
+            profilePrototype(null, null, true, zionPfp);
         }
         // Divine
         if ($(this).find('.message-data').attr('data-from') == 'divinesadness') {
-            profilePrototype('Divine', 'divine', null, divinePfp, null);
+            profilePrototype('Divine', 'divine', null, divinePfp);
         }
         // Palicoboi
         if ($(this).find('.message-data').attr('data-from') == 'Palicoboi') {
-            profilePrototype('Palico', 'palico', null, palicoPfp, null);
+            profilePrototype('Palico', 'palico', null, palicoPfp);
         }
         // Arc
         if ($(this).find('.message-data').attr('data-from') == 'arcnova95') {
-            profilePrototype('Arc!', 'arc', null, arcPfp, null);
+            profilePrototype('Arc!', 'arc', null, arcPfp);
         }
         // Amii
         if ($(this).find('.message-data').attr('data-from') == 'amiimaVT') {
-            profilePrototype('Amiima', 'amii', true, amiiPfp, null);
+            profilePrototype('Amiima', 'amii', true, amiiPfp);
         }
         // Raava 
         if ($(this).find('.message-data').attr('data-from') == 'R4AVA') {
-            profilePrototype('Raava', 'raava', true, raavaPfp, null);
-        }
-        // Raava 
-        if ($(this).find('.message-data').attr('data-from') == 'flowerofjoy') {
-            profilePrototype('Angel', 'angel', tnull, angelPfp, null);
+            profilePrototype('Raava', 'raava', true, raavaPfp);
         }
     });
 });
