@@ -65,19 +65,6 @@ document.addEventListener('onEventReceived', function () {
         }
         
         // Check for user - custom profiles
-        var deltaPfp    = 'https://cdn.discordapp.com/attachments/836046912795705364/1016833145489862737/custom-profile-delta.png';
-        var eluciaPfp   = 'https://cdn.discordapp.com/attachments/955963700643266581/1016864787071766588/elucia-profile-custome.png';
-        var zionPfp     = 'https://cdn.discordapp.com/attachments/646697203850543144/1017128291439755264/zion-clean-anim-profile-custome.gif';
-        var divinePfp   = 'https://cdn.discordapp.com/attachments/646697203850543144/1017111783632281620/divine-profile-custome.png';
-        var palicoPfp   = 'https://cdn.discordapp.com/attachments/894202372585299978/1016752623585595532/custom-profile.png';
-        var arcPfp      = 'https://cdn.discordapp.com/attachments/889602912966311946/1016758803804463224/arc-profile-custome.png';
-        var amiiPfp     = 'https://cdn.discordapp.com/attachments/883271091278209054/1016797834877608047/ammi-dark-profile-custome.png';
-        var raavaPfp    = 'https://cdn.discordapp.com/attachments/887882226308640838/1016826134941401198/raava-profile-custome.png';
-        var angelPfp    = 'https://cdn.discordapp.com/attachments/876887295427477564/1018337386096230561/angel-profile-custome.png';
-        // Vis Profile
-        var visPfp      = 'https://cdn.discordapp.com/attachments/887882226308640838/1017538344416182302/vis-profile-custome.png';
-        var visDeco     = 'https://cdn.discordapp.com/attachments/837650561960247316/1017584775021731840/fishead.png';
-
         function profilePrototype(replaceName, className, darkTheme, profileUrl, decoUrl) {
             if (replaceName != null) {
                 $('.message-wrapper').eq(e).find('.name').text(replaceName);
@@ -96,46 +83,6 @@ document.addEventListener('onEventReceived', function () {
         };
 
         // Custom Profiles - Add profiles below
-
-        // Vis
-        if ($(this).find('.message-data').attr('data-from') == 'Vistronn') {
-            profilePrototype('Vistron', 'vistron', null, visPfp, visDeco);
-        }
-        // Delta
-        if ($(this).find('.message-data').attr('data-from') == 'Delta013') {
-            profilePrototype(null, 'delta', null, deltaPfp, null);
-        }
-        // Elucia
-        if ($(this).find('.message-data').attr('data-from') == 'eluciasw') {
-            profilePrototype('Elucia', 'elucia', null, eluciaPfp, null);
-        }
-        // Zion
-        if ($(this).find('.message-data').attr('data-from') == 'ZionCross') {
-            profilePrototype(null, null, true, zionPfp, null);
-        }
-        // Divine
-        if ($(this).find('.message-data').attr('data-from') == 'divinesadness') {
-            profilePrototype('Divine', 'divine', null, divinePfp, null);
-        }
-        // Palicoboi
-        if ($(this).find('.message-data').attr('data-from') == 'Palicoboi') {
-            profilePrototype('Palico', 'palico', null, palicoPfp, null);
-        }
-        // Arc
-        if ($(this).find('.message-data').attr('data-from') == 'arcnova95') {
-            profilePrototype('Arc!', 'arc', null, arcPfp, null);
-        }
-        // Amii
-        if ($(this).find('.message-data').attr('data-from') == 'amiimaVT') {
-            profilePrototype('Amiima', 'amii', true, amiiPfp, null);
-        }
-        // Raava 
-        if ($(this).find('.message-data').attr('data-from') == 'R4AVA') {
-            profilePrototype('Raava', 'raava', true, raavaPfp, null);
-        }
-        // Raava 
-        if ($(this).find('.message-data').attr('data-from') == 'flowerofjoy') {
-            profilePrototype('Angel', 'angel', tnull, angelPfp, null);
-        }
+        
     });
 });
