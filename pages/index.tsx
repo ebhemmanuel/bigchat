@@ -5,9 +5,9 @@ import Head from 'next/head';
 import { getAllPostsForHome } from '@/lib/api';
 import { CMS_NAME } from '@/lib/constants';
 
-import PostData from '@/interfaces/post';
+import { PostData } from '@/interfaces/post';
 
-import Container from '@/components/container';
+import { Container } from '@/components/container';
 import HeroPost from '@/components/hero-post';
 import Intro from '@/components/intro';
 import Layout from '@/components/layout';

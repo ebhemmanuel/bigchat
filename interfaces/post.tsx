@@ -1,21 +1,19 @@
-type imageLink = {
+export type ImageLink = {
 	url: string;
 };
 
-type PostAuthor = {
+export type PostAuthor = {
 	name: string;
-	picture: imageLink;
+	picture: ImageLink;
 };
 
-type PostData = {
-	title?: string;
-	ogImage?: imageLink;
-	coverImage?: imageLink;
-	date?: string;
-	author?: PostAuthor;
-	slug?: string;
-	excerpt?: string;
-	content?: string;
+export type PostData = {
+	title: string;
+	ogImage: ImageLink;
+	coverImage: ImageLink;
+	date: string;
+	author: PostAuthor;
+	slug: string;
+	excerpt: string;
+	content: string;
 };
-
-export default PostData;

@@ -6,12 +6,12 @@ import { useRouter } from 'next/router';
 
 import { getAllPostsWithSlug, getPostAndMorePosts } from '@/lib/api';
 import { CMS_NAME } from '@/lib/constants';
-import markdownToHtml from '@/lib/markdownToHtml';
+import { markdownToHtml } from '@/lib/markdownToHtml';
 
-import PostData from '@/interfaces/post';
+import { PostData } from '@/interfaces/post';
 
-import Container from '@/components/container';
-import Header from '@/components/header';
+import { Container } from '@/components/container';
+import { Header } from '@/components/header';
 import Layout from '@/components/layout';
 import MoreStories from '@/components/more-stories';
 import PostBody from '@/components/post-body';

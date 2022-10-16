@@ -1,4 +1,4 @@
-import PostData from '@/interfaces/post';
+import { PostData } from '@/interfaces/post';
 
 async function fetchAPI<T>(
 	query: string,
@@ -24,14 +24,14 @@ async function fetchAPI<T>(
 	return json.data;
 }
 
-interface Data {
+export interface ApiPostData {
 	posts: PostData[];
 	allPosts: PostData[];
 	morePosts: PostData[];
 }
 
 export const getPreviewPostBySlug = async (slug: string): Promise<PostData> => {
-	const data = await fetchAPI<Data>(
+	const data = await fetchAPI<ApiPostData>(
 		`
   query PostBySlug($where: JSON) {
     posts(where: $where) {
@@ -51,7 +51,7 @@ export const getPreviewPostBySlug = async (slug: string): Promise<PostData> => {
 };
 
 export const getAllPostsWithSlug = async (): Promise<PostData[]> => {
-	const data = await fetchAPI<Data>(`
+	const data = await fetchAPI<ApiPostData>(`
     {
       posts {
         slug
@@ -64,7 +64,7 @@ export const getAllPostsWithSlug = async (): Promise<PostData[]> => {
 export const getAllPostsForHome = async (
 	preview: boolean | null = null
 ): Promise<PostData[]> => {
-	const data = await fetchAPI<Data>(
+	const data = await fetchAPI<ApiPostData>(
 		`
     query Posts($where: JSON){
       posts(sort: "date:desc", limit: 10, where: $where) {
@@ -98,8 +98,8 @@ export const getAllPostsForHome = async (
 export const getPostAndMorePosts = async (
 	slug: string = '',
 	preview: boolean | null = null
-): Promise<Data> => {
-	const data = await fetchAPI<Data>(
+): Promise<ApiPostData> => {
+	const data = await fetchAPI<ApiPostData>(
 		`
   query PostBySlug($where: JSON, $where_ne: JSON) {
     posts(where: $where) {
