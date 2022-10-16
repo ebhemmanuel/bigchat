@@ -1,5 +1,3 @@
-import { Except } from 'type-fest';
-
 import Link from 'next/link';
 
 import { PostData } from '@/interfaces/post';
@@ -8,7 +6,7 @@ import Avatar from './avatar';
 import CoverImage from './cover-image';
 import { Date } from './date';
 
-type Props = Except<PostData, 'ogImage' | 'content'>;
+type Props = Omit<PostData, 'ogImage' | 'content'>;
 
 export default function PostPreview({
 	title,

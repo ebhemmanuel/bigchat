@@ -1,10 +1,8 @@
-import { Except } from 'type-fest';
-
 import { ApiPostData } from '@/lib/api';
 
 import PostPreview from './post-preview';
 
-type Props = Except<ApiPostData, 'allPosts' | 'morePosts'>;
+type Props = Omit<ApiPostData, 'allPosts' | 'morePosts'>;
 
 export default function MoreStories({ posts }: Props) {
 	return (
