@@ -1,0 +1,16 @@
+{
+	"singleQuote": true,
+	"useTabs": true,
+	"importOrder": [
+		"^next/(.*)$",
+		"^@/styles/(.*)$",
+		"^@/lib/(.*)$",
+		"^@/interfaces/(.*)$",
+		"^@/components/(.*)$",
+		"^[./]"
+	],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true,
+	"pluginSearchDirs": false,
+	"plugins": ["./prettier-plugin.v4.js"]
+}
