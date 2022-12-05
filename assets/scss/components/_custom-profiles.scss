@@ -60,20 +60,8 @@
 }
 
 .delta {
-    box-shadow: 0px 0px 0px 3px #0952bd !important;
-    background: #0952bd !important;
-
-    +.message-container {
-        border: solid 5px #0952bd !important;
-
-        &:after {
-            border-right-color: #0952bd !important;
-        }
-
-        .name {
-            color: #0952bd !important;
-        }
-    }
+    //@include profile-styling($av-bg, $chat-border, $chat-bg-image, $chat-text-color, $name-color, $accent-color)
+    @include profile-styling(true, true, false, false, $blue, $blue);
 }
 
 .vistron {
@@ -120,7 +108,6 @@
 
 .elucia {
     background: transparent !important;
-
     +.message-container {
         .name {
             color: #ba3863 !important;
@@ -131,6 +118,7 @@
 .divine {
     border: solid 5px #bf11ff !important;
     background: black;
+
     .custom-image {
         top: -16px;
         left: -12px;
@@ -161,10 +149,10 @@
     background: transparent !important;
 
     +.message-container {
-        border: solid 5px #ff9fd4  !important;
+        border: solid 5px #ff9fd4 !important;
 
         &:after {
-            border-right-color: #ff9fd4  !important;
+            border-right-color: #ff9fd4 !important;
         }
 
         .name {
