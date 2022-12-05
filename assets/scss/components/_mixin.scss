@@ -1,0 +1,37 @@
+@mixin profile-styling($av-bg, $chat-border, $chat-bg-image, $chat-text-color, $name-color, $accent-color) {
+    // background and border for avatar
+    @if $av-bg {
+        box-shadow: 0px 0px 0px 3px $accent-color !important;
+        background: $accent-color !important;
+    }
+
+    // Chatbox Border
+    +.message-container {
+        // Border for bubble
+        @if $chat-border {
+            border: solid 5px $accent-color !important;
+
+            // Chatbox Left Arrow
+            &:after {
+                border-right-color: $accent-color !important;
+            }
+        }
+        // Bg image for bubble
+        @if $chat-bg-image {
+            background: transparent;
+            background-size: cover;
+            background-position: top;
+            background-image: url($chat-bg-image);
+        }
+        // Name color
+        @if $name-color {
+            .name {
+                color: $name-color !important;
+            }
+        }
+        // Chat text color
+        @if $chat-text-color {
+            color: $chat-text-color;
+        }
+    }
+}

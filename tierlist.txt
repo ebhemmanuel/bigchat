@@ -1,0 +1,26 @@
+A key for validation - checked how many times
+
+As a service
+
+Tier 1 4.99 HQ Emotes
++ hq emotes
+
+
+Tier 2 9.99 Limited 
+. hq emotes
++ 20 custom profiles
++ Customize profiles with our UI
++ User management
+
+tier 3 14.99 Unlimited 
+. hq emotes
++ Unlimited custom profiles
+. User management
+. Customize profiles with our UI
++ Custom Designs + Access to html/css
++ Custom decoration uploads
++ giphy support
+
+
+
+

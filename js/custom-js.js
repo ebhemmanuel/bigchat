@@ -75,10 +75,10 @@ document.addEventListener('onEventReceived', function () {
             if (className   != null) {
                 $('.message-wrapper').eq(e).find('.profile-picture').addClass(className);
             }
-            $('.message-wrapper').eq(e).find('.custom-image').attr('src', profileUrl);
             if(decoUrl  != null) {
                 $('.message-wrapper').eq(e).find('.message-decoration').attr('src', decoUrl);
             }
+            $('.message-wrapper').eq(e).find('.custom-image').attr('src', profileUrl);
             $('.message-wrapper').eq(e).find('.profile-picture').addClass('show');
         };
 
