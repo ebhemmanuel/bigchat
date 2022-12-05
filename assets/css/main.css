@@ -43,7 +43,24 @@ body {
   visibility: hidden;
 }
 
-/*Custom Profile Image */
+.dark {
+  background: black !important;
+}
+.dark + .message-container {
+  background: black !important;
+}
+.dark + .message-container .name {
+  color: white !important;
+}
+.dark + .message-container:after {
+  border-right-color: white !important;
+}
+.dark + .message-container .message {
+  color: white !important;
+  font-family: "Press Start 2P", cursive !important;
+  font-size: 14px;
+}
+
 .custom-image {
   display: none;
   position: absolute;
@@ -123,29 +140,11 @@ body {
   border-right-color: #1e3090 !important;
 }
 .vistron + .message-container .name {
-  font-weight: bolder;
   color: #1e3090 !important;
 }
 
-.dark {
-  background: black !important;
-}
-.dark + .message-container {
-  background: black !important;
-}
-.dark + .message-container .name {
-  color: white !important;
-}
-.dark + .message-container:after {
-  border-right-color: white !important;
-}
-.dark + .message-container .message {
-  color: white !important;
-  font-family: "Press Start 2P", cursive !important;
-  font-size: 14px;
-}
-
 .elucia {
+  box-shadow: 0px 0px 0px 3px transparent !important;
   background: transparent !important;
 }
 .elucia + .message-container .name {
@@ -153,19 +152,15 @@ body {
 }
 
 .divine {
-  border: solid 5px #bf11ff !important;
-  background: black;
-}
-.divine .custom-image {
-  top: -16px;
-  left: -12px;
+  box-shadow: 0px 0px 0px 3px #bf11ff !important;
+  background: #bf11ff !important;
 }
 .divine + .message-container {
   border: solid 5px #bf11ff !important;
   background: transparent;
   background-size: cover;
   background-position: top;
-  background-image: url(https://images.unsplash.com/photo-1540458638618-893e9fb35c07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1854&q=80);
+  background-image: url("https://images.unsplash.com/photo-1540458638618-893e9fb35c07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1854&q=80");
 }
 .divine + .message-container:after {
   border-right-color: #bf11ff !important;
@@ -174,10 +169,15 @@ body {
   color: #6befff !important;
 }
 .divine + .message-container .message {
-  color: white;
+  color: #fff !important;
+}
+.divine .custom-image {
+  top: -10px;
+  left: -8px;
 }
 
 .angel {
+  box-shadow: 0px 0px 0px 3px transparent !important;
   background: transparent !important;
 }
 .angel + .message-container {
@@ -187,13 +187,14 @@ body {
   border-right-color: #ff9fd4 !important;
 }
 .angel + .message-container .name {
-  color: white !important;
+  color: #fff !important;
 }
 .angel + .message-container .message {
-  color: white !important;
+  color: #fff !important;
 }
 
 .palico {
+  box-shadow: 0px 0px 0px 3px #75cfff !important;
   background: #75cfff !important;
 }
 .palico + .message-container {
@@ -207,8 +208,8 @@ body {
 }
 
 .arc {
+  box-shadow: 0px 0px 0px 3px #ff9fd4 !important;
   background: #ff9fd4 !important;
-  border: solid 5px #ff9fd4 !important;
 }
 .arc + .message-container .name {
   color: #ff9fd4 !important;
@@ -219,6 +220,7 @@ body {
 }
 
 .raava {
+  box-shadow: 0px 0px 0px 3px #62c2db !important;
   background: #62c2db !important;
 }
 .raava + .message-container .name {
