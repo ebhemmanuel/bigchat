@@ -143,10 +143,6 @@ body {
   color: #1e3090 !important;
 }
 
-.elucia {
-  box-shadow: 0px 0px 0px 3px transparent !important;
-  background: transparent !important;
-}
 .elucia + .message-container .name {
   color: #ba3863 !important;
 }
@@ -154,6 +150,10 @@ body {
 .divine {
   box-shadow: 0px 0px 0px 3px #bf11ff !important;
   background: #bf11ff !important;
+}
+.show .divine .custom-image {
+  top: -10px;
+  left: -8px;
 }
 .divine + .message-container {
   border: solid 5px #bf11ff !important;
@@ -171,15 +171,7 @@ body {
 .divine + .message-container .message {
   color: #fff !important;
 }
-.divine .custom-image {
-  top: -10px;
-  left: -8px;
-}
 
-.angel {
-  box-shadow: 0px 0px 0px 3px transparent !important;
-  background: transparent !important;
-}
 .angel + .message-container {
   border: solid 5px #ff9fd4 !important;
 }
@@ -224,7 +216,7 @@ body {
   background: #62c2db !important;
 }
 .raava + .message-container .name {
-  color: #f06c8f !important;
+  color: #ff9fd4 !important;
 }
 
 .emote {
