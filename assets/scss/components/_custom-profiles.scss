@@ -1,0 +1,141 @@
+// Legend for Mixins
+// @include profile-avatar (
+//      avatar-background-color, 
+//      avatar-image-position(t/f), 
+//      top, 
+//      bottom
+//);
+
+// @include profile-chatbox (
+//      color-used-for-border, 
+//      username-color, 
+//      chat-border(t/f), 
+//      chat-message-color, 
+//      background-image-url
+//);
+
+.delta {
+    @include profile-avatar (
+        $blue,
+        false,
+        false,
+        false
+    );
+    @include profile-chatbox (
+        $blue,
+        $blue,
+        true,
+        false,
+        false
+    );
+}
+
+.vistron {
+    @include profile-avatar (
+        $deep-blue,
+        false,
+        false,
+        false
+    );
+    @include profile-chatbox (
+        $deep-blue,
+        $deep-blue,
+        true,
+        false,
+        false
+    );
+}
+
+.elucia {
+    @include profile-chatbox (
+        false,
+        $magenta,
+        false,
+        false,
+        false
+    );
+}
+
+.divine {
+    @include profile-avatar (
+        $purple,
+        true,
+        -10px,
+        -8px
+    );
+    @include profile-chatbox (
+        $purple,
+        $cyan,
+        true,
+        $white,
+        $divine-bg-image
+    );
+}
+
+.angel {
+    @include profile-chatbox (
+        $pink,
+        $white,
+        true,
+        $white,
+        false
+    );
+}
+
+.palico {
+    @include profile-avatar (
+        $light-blue,
+        false,
+        false,
+        false
+    );
+    @include profile-chatbox (
+        $red,
+        $red,
+        true,
+        false,
+        false
+    );
+}
+
+.arc {
+    @include profile-avatar (
+        $pink,
+        false,
+        false,
+        false
+    );
+    @include profile-chatbox (
+        false,
+        $pink,
+        false,
+        false,
+        false
+    );
+}
+
+.amii {
+    @include profile-chatbox (
+        false,
+        $neon-green,
+        false,
+        false,
+        false
+    );
+}
+
+.raava {
+    @include profile-avatar (
+        $raava-blue, 
+        false, 
+        false, 
+        false
+    );
+    @include profile-chatbox (
+        false, 
+        $pink, 
+        false, 
+        false, 
+        false
+    );
+}
