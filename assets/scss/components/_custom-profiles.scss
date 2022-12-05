@@ -12,7 +12,7 @@
 //      chat-border(t/f), 
 //      chat-message-color, 
 //      background-image-url
-// );
+//);
 
 .delta {
     @include profile-avatar (
@@ -110,7 +110,8 @@
         $pink,
         false,
         false,
-        false);
+        false
+    );
 }
 
 .amii {
