@@ -3,7 +3,7 @@
     bottom: 10px;
     position: absolute;
     font-family: 'Press Start 2P', cursive;
-    color: white !important;
+    color: $white !important;
 }
 
 .message-counter {
@@ -17,7 +17,7 @@
     margin-top: 4px;
     padding-right: 35px;
     border-radius: 6px;
-    color: black;
+    color: $black;
     text-align: left;
     font-size: 20px;
     font-weight: 500;

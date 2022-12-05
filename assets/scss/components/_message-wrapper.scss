@@ -47,8 +47,8 @@
     align-content: center;
     margin-left: 24px;
     padding: 8px 16px 8px 0;
-    background: rgba(255, 255, 255, 1);
-    border: solid 5px white !important;
+    background: $white;
+    border: solid 5px $white !important;
     border-radius: 12px;
 
     &:after {
@@ -63,12 +63,12 @@
         margin: -10px 0 0;
         border-width: 10px 10px 0;
         border-style: solid;
-        border-color: #3498db transparent transparent;
+        border-color: $white transparent transparent;
         border-width: 10px;
         border-left-color: transparent;
         border-left-width: 0;
         border-top-color: transparent;
-        border-right-color: rgba(255, 255, 255, 1);
+        border-right-color: $white;
     }
 
     &.dark:after {
