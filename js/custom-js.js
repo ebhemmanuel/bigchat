@@ -51,16 +51,24 @@ document.addEventListener('onEventReceived', function () {
                 $(this).attr('style', $(this).attr('style').substring(0, lengthCheck) + '3.0);');
             }
         });
-        if($(this).find($('.emote')).length == 1 ) {
-            $(this).find($('.message')).addClass('single-emotes');
+         if($(this).find($('.emote')).length ==1) {
+            $(this).find($('.message')).addClass('emote-big');
         }
-        if($(this).find($('.emote')).length == 4 ) {
-            $(this).find($('.message')).addClass('small-emotes');
+        if($(this).find($('.emote')).length >=2 && $(this).find($('.emote')).length <= 4 ) {
+            $(this).find($('.message')).addClass('emote-x5');
         }
-        if($(this).find($('.emote')).length == 5 ) {
-            $(this).find($('.message')).addClass('smaller-emotes');
+        if($(this).find($('.emote')).length >=5 && $(this).find($('.emote')).length <= 24 ) {
+            $(this).find($('.message')).addClass('emote-x10');
         }
-        if($(this).find($('.emote')).length >= 6 ) {
+
+        if($(this).find($('.emote')).length < 9 ) {
+            let emoteLength = $(this).find($('.emote')).length-1;
+            for (var i = 0; i < emoteLength; i++) {
+                $(this).find($('.emote')).eq(i).remove();
+            }
+        }
+
+        if($(this).find($('.emote')).length > 24 ) {
             $(this).find($('.message')).addClass('smallest-emotes');
         }
         

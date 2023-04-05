@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900);
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat+Brush&family=Poppins:wght@400;600&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat+Brush&family=Poppins:wght@400;600&family=Press+Start+2P&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -234,15 +235,48 @@ body {
   width: 12%;
   height: 38px;
 }
-.smaller-emotes .emote {
-  width: 16%;
-  height: 51px;
+.emote-big .emote {
+  width: 100%;
+  height: 120%;
 }
-.small-emotes .emote {
-  width: 21%;
+.emote-big .emote img {
+  height: 12em;
+}
+.emote-big .emote:nth-child(n+2) {
+  display: none;
+}
+.emote-x4 .emote {
+  width: 100%;
+  height: 140%;
+}
+.emote-x4 .emote img {
+  height: 10em;
+}
+.emote-x4 .emote:nth-child(n+2) {
+  display: none;
+}
+.emote-x5 .emote {
+  width: 100%;
+  height: 190%;
+}
+.emote-x5 .emote img {
+  height: 18em;
+}
+.emote-x5 .emote:nth-child(n+2) {
+  display: none;
+}
+.emote-x10 .emote {
+  width: 100%;
+  height: 250%;
+}
+.emote-x10 .emote img {
+  height: 18em;
+}
+.emote-x10 .emote:nth-child(n+2) {
+  display: none;
 }
 .single-emotes .emote {
-  height: 166px;
+  height: 80px;
   width: 100%;
 }
 .emote img {
