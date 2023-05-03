@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900);
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat+Brush&family=Poppins:wght@400;600&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat+Brush&family=Poppins:wght@400;600&family=Press+Start+2P&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -43,7 +44,24 @@ body {
   visibility: hidden;
 }
 
-/*Custom Profile Image */
+.dark {
+  background: black !important;
+}
+.dark + .message-container {
+  background: black !important;
+}
+.dark + .message-container .name {
+  color: #fff !important;
+}
+.dark + .message-container:after {
+  border-right-color: #fff !important;
+}
+.dark + .message-container .message {
+  color: #fff !important;
+  font-family: "Press Start 2P", cursive !important;
+  font-size: 14px;
+}
+
 .custom-image {
   display: none;
   position: absolute;
@@ -63,7 +81,7 @@ body {
   position: relative;
   background: #999;
   border-radius: 100%;
-  box-shadow: 0px 0px 0px 3px white;
+  box-shadow: 0px 0px 0px 3px #fff;
 }
 .profile-picture.show {
   overflow: initial;
@@ -75,7 +93,7 @@ body {
   height: 30px;
   width: 30px;
   position: absolute;
-  background: white;
+  background: #fff;
   border-radius: 100%;
 }
 
@@ -85,7 +103,7 @@ body {
   width: 36px;
   height: 15px;
   position: absolute;
-  background: white;
+  background: #fff;
   border-radius: 40%;
 }
 
@@ -123,49 +141,27 @@ body {
   border-right-color: #1e3090 !important;
 }
 .vistron + .message-container .name {
-  font-weight: bolder;
   color: #1e3090 !important;
 }
 
-.dark {
-  background: black !important;
-}
-.dark + .message-container {
-  background: black !important;
-}
-.dark + .message-container .name {
-  color: white !important;
-}
-.dark + .message-container:after {
-  border-right-color: white !important;
-}
-.dark + .message-container .message {
-  color: white !important;
-  font-family: "Press Start 2P", cursive !important;
-  font-size: 14px;
-}
-
-.elucia {
-  background: transparent !important;
-}
 .elucia + .message-container .name {
   color: #ba3863 !important;
 }
 
 .divine {
-  border: solid 5px #bf11ff !important;
-  background: black;
+  box-shadow: 0px 0px 0px 3px #bf11ff !important;
+  background: #bf11ff !important;
 }
-.divine .custom-image {
-  top: -16px;
-  left: -12px;
+.show .divine .custom-image {
+  top: -10px;
+  left: -8px;
 }
 .divine + .message-container {
   border: solid 5px #bf11ff !important;
   background: transparent;
   background-size: cover;
   background-position: top;
-  background-image: url(https://images.unsplash.com/photo-1540458638618-893e9fb35c07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1854&q=80);
+  background-image: url("https://images.unsplash.com/photo-1540458638618-893e9fb35c07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1854&q=80");
 }
 .divine + .message-container:after {
   border-right-color: #bf11ff !important;
@@ -174,12 +170,9 @@ body {
   color: #6befff !important;
 }
 .divine + .message-container .message {
-  color: white;
+  color: #fff !important;
 }
 
-.angel {
-  background: transparent !important;
-}
 .angel + .message-container {
   border: solid 5px #ff9fd4 !important;
 }
@@ -187,13 +180,14 @@ body {
   border-right-color: #ff9fd4 !important;
 }
 .angel + .message-container .name {
-  color: white !important;
+  color: #fff !important;
 }
 .angel + .message-container .message {
-  color: white !important;
+  color: #fff !important;
 }
 
 .palico {
+  box-shadow: 0px 0px 0px 3px #75cfff !important;
   background: #75cfff !important;
 }
 .palico + .message-container {
@@ -207,8 +201,8 @@ body {
 }
 
 .arc {
+  box-shadow: 0px 0px 0px 3px #ff9fd4 !important;
   background: #ff9fd4 !important;
-  border: solid 5px #ff9fd4 !important;
 }
 .arc + .message-container .name {
   color: #ff9fd4 !important;
@@ -219,10 +213,11 @@ body {
 }
 
 .raava {
+  box-shadow: 0px 0px 0px 3px #62c2db !important;
   background: #62c2db !important;
 }
 .raava + .message-container .name {
-  color: #f06c8f !important;
+  color: #ff9fd4 !important;
 }
 
 .emote {
@@ -240,15 +235,48 @@ body {
   width: 12%;
   height: 38px;
 }
-.smaller-emotes .emote {
-  width: 16%;
-  height: 51px;
+.emote-big .emote {
+  width: 100%;
+  height: 120%;
 }
-.small-emotes .emote {
-  width: 21%;
+.emote-big .emote img {
+  height: 12em;
+}
+.emote-big .emote:nth-child(n+2) {
+  display: none;
+}
+.emote-x4 .emote {
+  width: 100%;
+  height: 140%;
+}
+.emote-x4 .emote img {
+  height: 10em;
+}
+.emote-x4 .emote:nth-child(n+2) {
+  display: none;
+}
+.emote-x5 .emote {
+  width: 100%;
+  height: 190%;
+}
+.emote-x5 .emote img {
+  height: 18em;
+}
+.emote-x5 .emote:nth-child(n+2) {
+  display: none;
+}
+.emote-x10 .emote {
+  width: 100%;
+  height: 250%;
+}
+.emote-x10 .emote img {
+  height: 18em;
+}
+.emote-x10 .emote:nth-child(n+2) {
+  display: none;
 }
 .single-emotes .emote {
-  height: 166px;
+  height: 80px;
   width: 100%;
 }
 .emote img {
@@ -303,8 +331,8 @@ body {
   align-content: center;
   margin-left: 24px;
   padding: 8px 16px 8px 0;
-  background: rgb(255, 255, 255);
-  border: solid 5px white !important;
+  background: #fff;
+  border: solid 5px #fff !important;
   border-radius: 12px;
 }
 .message-container:after {
@@ -319,12 +347,12 @@ body {
   margin: -10px 0 0;
   border-width: 10px 10px 0;
   border-style: solid;
-  border-color: #3498db transparent transparent;
+  border-color: #fff transparent transparent;
   border-width: 10px;
   border-left-color: transparent;
   border-left-width: 0;
   border-top-color: transparent;
-  border-right-color: rgb(255, 255, 255);
+  border-right-color: #fff;
 }
 .message-container.dark:after {
   border-right-color: black;
@@ -340,7 +368,7 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 .dark + .notification-pulse:after, .dark + .notification-pulse:before {
-  background-color: white;
+  background-color: #fff;
 }
 .notification-pulse:after {
   content: "";
@@ -374,7 +402,7 @@ body {
   margin-left: -100%;
   margin-top: -100%;
   border-radius: 100px;
-  background-color: white;
+  background-color: #fff;
   animation: pulse-ring-strong 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
 }
 
@@ -470,7 +498,7 @@ body {
   bottom: 10px;
   position: absolute;
   font-family: "Press Start 2P", cursive;
-  color: white !important;
+  color: #fff !important;
 }
 
 .message-counter {
@@ -484,7 +512,7 @@ body {
   margin-top: 4px;
   padding-right: 35px;
   border-radius: 6px;
-  color: black;
+  color: #000;
   text-align: left;
   font-size: 20px;
   font-weight: 500;

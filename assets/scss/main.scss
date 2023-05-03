@@ -1,4 +1,7 @@
-@import "components/_base";
+@import "globals/_variables";
+@import "globals/_base";
+@import "mixin/_profiles";
+@import "components/_chat-structure";
 @import "components/_custom-profiles";
 @import "components/_emotes";
 @import "components/_message-wrapper";

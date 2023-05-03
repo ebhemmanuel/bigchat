@@ -1,224 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat+Brush&family=Poppins:wght@400;600&family=Press+Start+2P&display=swap');
+// Legend for Mixins
+// @include profile-avatar (
+//      avatar-background-color, 
+//      avatar-image-position(t/f), 
+//      top, 
+//      bottom
+//);
 
-// User Deifned Profiles
-/*Custom Profile Image */
-.custom-image {
-    display: none;
-    position: absolute;
-    z-index: 5;
-
-    .show & {
-        top: -11px;
-        left: -8px;
-        display: block;
-    }
-}
-
-/*Profile Picture*/
-.profile-picture {
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-    position: relative;
-    background: #999;
-    border-radius: 100%;
-    box-shadow: 0px 0px 0px 3px white;
-
-    &.show {
-        overflow: initial;
-    }
-}
-
-.top-part {
-    top: 11px;
-    left: 14px;
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    background: white;
-    border-radius: 100%;
-}
-
-.bottom-part {
-    left: 11px;
-    bottom: 0;
-    width: 36px;
-    height: 15px;
-    position: absolute;
-    background: white;
-    border-radius: 40%;
-
-}
-
-.top-part,
-.bottom-part {
-    opacity: 0.7;
-
-    .show & {
-        opacity: 0;
-    }
-}
+// @include profile-chatbox (
+//      color-used-for-border, 
+//      username-color, 
+//      chat-border(t/f), 
+//      chat-message-color, 
+//      background-image-url
+//);
 
 .delta {
-    box-shadow: 0px 0px 0px 3px #0952bd !important;
-    background: #0952bd !important;
-
-    +.message-container {
-        border: solid 5px #0952bd !important;
-
-        &:after {
-            border-right-color: #0952bd !important;
-        }
-
-        .name {
-            color: #0952bd !important;
-        }
-    }
+    @include profile-avatar (
+        $blue,
+        false,
+        false,
+        false
+    );
+    @include profile-chatbox (
+        $blue,
+        $blue,
+        true,
+        false,
+        false
+    );
 }
 
 .vistron {
-    box-shadow: 0px 0px 0px 3px #1e3090 !important;
-    background: #1e3090 !important;
-
-    +.message-container {
-        border: solid 5px #1e3090 !important;
-
-        &:after {
-            border-right-color: #1e3090 !important;
-        }
-
-        .name {
-            font-weight: bolder;
-            color: #1e3090 !important;
-        }
-    }
-}
-
-
-
-.dark {
-    background: black !important;
-
-    +.message-container {
-        background: black !important;
-
-        .name {
-            color: white !important;
-        }
-
-        &:after {
-            border-right-color: white !important;
-        }
-
-        .message {
-            color: white !important;
-            font-family: 'Press Start 2P', cursive !important;
-            font-size: 14px;
-        }
-    }
+    @include profile-avatar (
+        $deep-blue,
+        false,
+        false,
+        false
+    );
+    @include profile-chatbox (
+        $deep-blue,
+        $deep-blue,
+        true,
+        false,
+        false
+    );
 }
 
 .elucia {
-    background: transparent !important;
-
-    +.message-container {
-        .name {
-            color: #ba3863 !important;
-        }
-    }
+    @include profile-chatbox (
+        false,
+        $magenta,
+        false,
+        false,
+        false
+    );
 }
 
 .divine {
-    border: solid 5px #bf11ff !important;
-    background: black;
-    .custom-image {
-        top: -16px;
-        left: -12px;
-    }
-
-    +.message-container {
-        border: solid 5px #bf11ff !important;
-        background: transparent;
-        background-size: cover;
-        background-position: top;
-        background-image: url(https://images.unsplash.com/photo-1540458638618-893e9fb35c07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1854&q=80);
-
-        &:after {
-            border-right-color: #bf11ff !important;
-        }
-
-        .name {
-            color: #6befff !important;
-        }
-
-        .message {
-            color: white;
-        }
-    }
+    @include profile-avatar (
+        $purple,
+        true,
+        -10px,
+        -8px
+    );
+    @include profile-chatbox (
+        $purple,
+        $cyan,
+        true,
+        $white,
+        $divine-bg-image
+    );
 }
 
 .angel {
-    background: transparent !important;
-
-    +.message-container {
-        border: solid 5px #ff9fd4  !important;
-
-        &:after {
-            border-right-color: #ff9fd4  !important;
-        }
-
-        .name {
-            color: white !important;
-        }
-
-        .message {
-            color: white !important;
-        }
-    }
+    @include profile-chatbox (
+        $pink,
+        $white,
+        true,
+        $white,
+        false
+    );
 }
 
 .palico {
-    background: #75cfff !important;
-
-    +.message-container {
-        border: solid 5px #cb4263 !important;
-
-        &:after {
-            border-right-color: #cb4263 !important;
-        }
-
-        .name {
-            color: #cb4263 !important;
-        }
-    }
+    @include profile-avatar (
+        $light-blue,
+        false,
+        false,
+        false
+    );
+    @include profile-chatbox (
+        $red,
+        $red,
+        true,
+        false,
+        false
+    );
 }
 
 .arc {
-    background: #ff9fd4 !important;
-    ;
-    border: solid 5px #ff9fd4 !important;
-
-    +.message-container {
-        .name {
-            color: #ff9fd4 !important;
-        }
-    }
+    @include profile-avatar (
+        $pink,
+        false,
+        false,
+        false
+    );
+    @include profile-chatbox (
+        false,
+        $pink,
+        false,
+        false,
+        false
+    );
 }
 
 .amii {
-    +.message-container {
-        .name {
-            color: #8aff73 !important;
-        }
-    }
+    @include profile-chatbox (
+        false,
+        $neon-green,
+        false,
+        false,
+        false
+    );
 }
 
 .raava {
-    background: #62c2db !important;
-
-    +.message-container {
-        .name {
-            color: #f06c8f !important;
-        }
-    }
+    @include profile-avatar (
+        $raava-blue, 
+        false, 
+        false, 
+        false
+    );
+    @include profile-chatbox (
+        false, 
+        $pink, 
+        false, 
+        false, 
+        false
+    );
 }

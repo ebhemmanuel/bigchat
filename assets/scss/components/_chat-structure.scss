@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat+Brush&family=Poppins:wght@400;600&family=Press+Start+2P&display=swap');
+
+// Dark styling overwrite
+.dark {
+    background: black !important;
+    
+    +.message-container {
+        background: black !important;
+        
+        .name {
+            color: $white !important;
+        }
+        
+        &:after {
+            border-right-color: $white !important;
+        }
+        
+        .message {
+            color: $white !important;
+            font-family: 'Press Start 2P', cursive !important;
+            font-size: 14px;
+        }
+    }
+}
+// Custom Chat Structure
+// Custom Profile Image
+.custom-image {
+    display: none;
+    position: absolute;
+    z-index: 5;
+
+    .show & {
+        top: -11px;
+        left: -8px;
+        display: block;
+    }
+}
+
+/*Profile Picture*/
+.profile-picture {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    background: $gray;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 3px $white;
+
+    &.show {
+        overflow: initial;
+    }
+}
+
+.top-part {
+    top: 11px;
+    left: 14px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background: $white;
+    border-radius: 100%;
+}
+
+.bottom-part {
+    left: 11px;
+    bottom: 0;
+    width: 36px;
+    height: 15px;
+    position: absolute;
+    background: $white;
+    border-radius: 40%;
+
+}
+
+.top-part,
+.bottom-part {
+    opacity: 0.7;
+
+    .show & {
+        opacity: 0;
+    }
+}
