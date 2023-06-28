@@ -333,7 +333,7 @@ body {
   padding: 8px 16px 8px 0;
   background: #fff;
   border: solid 5px #fff !important;
-  border-radius: 12px;
+  border-radius: 30px;
 }
 .message-container:after {
   content: "";
