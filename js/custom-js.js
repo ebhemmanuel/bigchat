@@ -104,6 +104,9 @@ document.addEventListener('onEventReceived', function () {
         var visPfp      = 'https://cdn.discordapp.com/attachments/887882226308640838/1017538344416182302/vis-profile-custome.png';
         var visDeco     = 'https://cdn.discordapp.com/attachments/837650561960247316/1017584775021731840/fishead.png';
 
+        // To be replaced with a sequencer based on api call
+        // profilePrototype(replaceName, className, darkTheme, profileUrl, decoUrl) => parameter values
+        // Replace these settings with your own - the second parameter is the class name you are assining it to from the .scss file.
         // Vis
         if ($(this).find('.message-data').attr('data-from') == 'Vistronn') {
             profilePrototype('Vistron', 'vistron', null, visPfp, visDeco);
