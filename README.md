@@ -20,6 +20,7 @@ To get started with BigChat, follow these simple steps:
    - Download github desktop if you're not very familiar with cloining repo's. Once installed you can download and manage your repos from there.
    - Navigate to the project directory and install the required dependencies using npm i.
    - You'll need to transfer the `custom-chat-box.html` code on to your streamlabs html section.
+   - There are some already existing users that have been added manually to the javascript while we build the backend for a twitch auth system. You'll need to mimic the code struc
    - Next we want to pass the custom-fields in so that we can adjust font sizes and other settings this way through streamlabs.
 
 3. **Configuration:**
@@ -28,9 +29,8 @@ To get started with BigChat, follow these simple steps:
 
 4. **Launching:**
    - In terminal run sass-watch to generate your file and start making changes!
-   - Enjoy an enhanced chatting experience with your audience!
-  
-   - 
+   - Open up `assets/css/main.css` and copy paste it over to your custom css section in streamlabs.
+   - Happy chatting!
 
 
 ## Contributing
