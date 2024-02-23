@@ -45,9 +45,6 @@ We welcome contributions from the community! If you have suggestions for improve
 - Push to the branch (`git push origin feature/AmazingFeature`)
 - Open a Pull Request
 
-## License
-Distributed under the MIT License.
-
 ## Acknowledgments
 - Shoutout to the streaming community for inspiring us to create this tool.
 
