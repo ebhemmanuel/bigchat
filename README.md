@@ -51,7 +51,7 @@ We welcome contributions from the community! If you have suggestions for improve
 - Shoutout to the streaming community for inspiring us to create this tool.
 
 ## Contact
-For support or inquiries, please contact us via GitHub or join our Discord community.
+For support or inquiries, please contact us via GitHub.
 
 ---
 
