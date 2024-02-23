@@ -1,8 +1,10 @@
 # BigChat
-
+![](https://cdn.discordapp.com/attachments/887882226308640838/1210403732064567378/bigchat.png?ex=65ea6f51&is=65d7fa51&hm=1204fd41788e2642e137257539f1f94430892155cb4e5de6753c2960d68368be&)
 BigChat is an innovative tool designed to elevate the interaction experience for streamers and their audiences. By introducing personalized chat bubbles and high-definition, scalable emojis, our project aims to make every chat more engaging and visually appealing.
 
 ## Features
+
+![](https://cdn.discordapp.com/attachments/887882226308640838/1210405351778947152/chat.gif?ex=65ea70d4&is=65d7fbd4&hm=b09cb47a1dc0a1017b5fe35c3d5aa5ef6ff840e08823468dae36734bad845053&)
 
 - **Custom Chat Bubbles:** Customize the appearance of chat bubbles for individual users, making the chat stream more colorful and personalized.
 
@@ -26,6 +28,7 @@ To get started with BigChat, follow these simple steps:
 3. **Configuration:**
    - While we still have to setup a front-end config system, you'll need to have some experience with css to adjust most of the settings.
    - You'll find the file to change in the `assets/scss/components` directory. everything else gets compiled up to the `main.scss` and then outputed to the final `main.css` file in `assets/css`
+   - In the `assets/scss/mixin/_profiles.scss` file - youll find our main mixin @mixin profile-avatar ($av-bg, $av-pos, $top, $left)
 
 4. **Launching:**
    - In terminal run sass-watch to generate your file and start making changes!
