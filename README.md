@@ -18,7 +18,7 @@ BigChat is an innovative tool designed to elevate the interaction experience for
 To get started with BigChat, follow these simple steps:
 
 1. **Installation:**
-   - Clone the repository to your local machine using `git clone https://github.com/ebhemmanuel/enhane-widgets.git](https://github.com/ebhemmanuel/bigchat`
+   - Clone the repository to your local machine using `git clone https://github.com/ebhemmanuel/bigchat`
    - Download github desktop if you're not very familiar with cloining repo's. Once installed you can download and manage your repos from there.
    - Navigate to the project directory and install the required dependencies using npm i.
    - You'll need to transfer the `custom-chat-box.html` code on to your streamlabs html section.
