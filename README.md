@@ -2,6 +2,8 @@
 ![](https://cdn.discordapp.com/attachments/887882226308640838/1210403732064567378/bigchat.png?ex=65ea6f51&is=65d7fa51&hm=1204fd41788e2642e137257539f1f94430892155cb4e5de6753c2960d68368be&)
 BigChat is an innovative tool designed to elevate the interaction experience for streamers and their audiences. By introducing personalized chat bubbles and high-definition, scalable emojis, our project aims to make every chat more engaging and visually appealing.
 
+Disclaimer - the image above is an early concept - styling and interaction are still early on and need a more dynamic execution.
+
 ## Features
 
 ![](https://cdn.discordapp.com/attachments/887882226308640838/1210405351778947152/chat.gif?ex=65ea70d4&is=65d7fbd4&hm=b09cb47a1dc0a1017b5fe35c3d5aa5ef6ff840e08823468dae36734bad845053&)
